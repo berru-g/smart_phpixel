@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Pixel - Analytics Souverains | Documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <script src="smart-pixel.js"></script>
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="nav-brand">
+                    <div
+                        style="background: linear-gradient(135deg, #667eea, #764ba2); width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
+                        <img src="https://gael-berru.com/smart_phpixel/pixel.php?source=smart-page" width="1"
+                            height="1" style="display:none;">
+                    </div>
+                    Smart Pixel
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#introduction" class="active">Introduction</a></li>
+                    <li><a href="#installation">Installation</a></li>
+                    <li><a href="#usage">Utilisation</a></li>
+                    <!--<li><a href="#demo">Démo</a></li>-->
+                    <li><a href="https://github.com/berru-g/smart_phpixel/" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>Documentation</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="#introduction" class="active">🎯 Introduction</a></li>
+                        <li><a href="#features">✨ Fonctionnalités</a></li>
+                        <li><a href="#philosophy">🛡️ Philosophie</a></li>
+                        <li><a href="#installation">🚀 Installation</a></li>
+                        <li><a href="#configuration">⚙️ Configuration</a></li>
+                        <li><a href="#usage">📖 Utilisation</a></li>
+                        <!--<li><a href="#demo">🎮 Démo Live</a></li>-->
+                        <li><a href="#comparison">📊 Comparaison</a></li>
+                        <li><a href="#faq">❓ FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Ressources</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="https://github.com/berru-g/smart_phpixel/" target="_blank">📦 Code
+                                Source</a></li>
+                        <li><a href="https://github.com/berru-g/smart_phpixel//issues" target="_blank">🐛
+                                Issues</a>
+                        </li>
+                        <li><a href="https://github.com/berru-g/smart_phpixel//wiki" target="_blank">📚 Wiki</a>
+                        </li>
+                        <li><a href="#api">🔌 API Reference</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Content -->
+            <main class="content">
+                <!-- Hero Section -->
+                <section id="introduction" class="hero">
+                    <h1>Smart Pixel</h1>
+                    <p class="hero-subtitle">
+                        Une alternative souveraine à Google Analytics. Vos données restent sur vos serveurs,
+                        pas chez les GAFAM. Conforme RGPD, open source, et éthique.
+                    </p>
+                    <div class="hero-badges">
+                        <span class="badge primary">🔓 Open Source</span>
+                        <span class="badge">⚖️ RGPD Compliant</span>
+                        <span class="badge">🚀 Auto-hébergé</span>
+                        <span class="badge">🐦 Léger (181KO)</span>
+                    </div>
+                </section>
+
+                <!-- Features -->
+                <section id="features" class="section">
+                    <div class="section-header">
+                        <div class="section-icon">✨</div>
+                        <h2>Fonctionnalités</h2>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🔒</div>
+                            <h3>Souveraineté des données</h3>
+                            <p>Vos données restent sur vos serveurs. Aucune transmission à des tiers ou aux GAFAM.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">⚖️</div>
+                            <h3>Conforme RGPD</h3>
+                            <p>Consentement explicite, anonymisation, droit à l'oubli intégrés dès la conception.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">🚀</div>
+                            <h3>Performance optimale</h3>
+                            <p>Script léger (181KO), tracking asynchrone, pas d'impact sur le temps de chargement.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>Dashboard complet</h3>
+                            <p>Visualisation des données en temps réel, export CSV/JSON, API RESTful.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">🔄</div>
+                            <h3>Tracking intelligent</h3>
+                            <p>Visites, sessions, clics, scroll, sources de trafic, géolocalisation anonymisée.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">🔧</div>
+                            <h3>Facile à déployer</h3>
+                            <p>PHP + MySQL, installation en 5 minutes, documentation complète.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Philosophy -->
+                <section id="philosophy" class="section">
+                    <div class="section-header">
+                        <div class="section-icon">🛡️</div>
+                        <h2>Notre Philosophie</h2>
+                    </div>
+
+                    <p>Smart Pixel est né d'une conviction simple : <strong>vos données vous appartiennent</strong>.</p>
+
+                    <p>Dans un écosystème numérique dominé par les GAFAM (Google, Apple, Facebook, Amazon, Microsoft),
+                        chaque clic, chaque visite, chaque interaction est monétisé, exploité. Ces géants du web
+                        font de vos visiteurs <strong>leurs produits</strong>.</p>
+
+                    <div class="code-container" style="margin: 24px 0;">
+                        <div class="code-header">
+                            <div class="code-title">Notre engagement</div>
+                        </div>
+                        <div class="code-block">
+                            <pre><code class="language-js">// Pas de tracking sans consentement
+if (!userConsent.given) {
+    return; // Nous n'avons pas le droit
+}
+
+// Pas de données personnelles
+const anonymizedData = {
+    sessionId: generateAnonymousId(),
+    country: getCountryFromIP(anonymizeIP(ip)),
+    actions: userActions,
+    // Jamais : email, nom, adresse, etc.
+};
+
+// Stockage local uniquement
+saveToDatabase(anonymizedData); // Vos serveurs → Votre contrôle</code></pre>
+                        </div>
+                    </div>
+
+                    <p>Avec Smart Pixel, vous reprenez le contrôle :</p>
+                    <ul style="margin: 16px 0 16px 24px; color: var(--text-secondary);">
+                        <li>Les données de vos visiteurs restent sur <strong>vos serveurs</strong></li>
+                        <li>Vous respectez réellement le <strong>RGPD</strong></li>
+                        <li>Vous offrez une alternative <strong>éthique</strong> à vos utilisateurs</li>
+                        <li>Vous évitez les amendes potentielles (jusqu'à 4% du CA)</li>
+                    </ul>
+                </section>
+
+                <!-- Installation -->
+                <section id="installation" class="section">
+                    <div class="section-header">
+                        <div class="section-icon">🚀</div>
+                        <h2>Installation</h2>
+                    </div>
+
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-content">
+                                <h3>Clonez le repository</h3>
+                                <p>Commencez par récupérer le code source en local :</p>
+                                <div class="code-container">
+                                    <div class="code-header">
+                                        <div class="code-title">Terminal</div>
+                                        <button class="code-copy" onclick="copyCode(this)">Copier</button>
+                                    </div>
+                                    <div class="code-block">
+                                        <pre><code class="language-bash">git clone https://github.com/berru-g/smart_phpixel/.git
+cd smart_phpixel</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-content">
+                                <h3>Configurez les tables (smart pixel + Dashboard ) de la base de données</h3>
+                                <p>Créez une base MySQL et importez le schéma :</p>
+                                <div class="code-container">
+                                    <div class="code-header">
+                                        <div class="code-title">MySQL</div>
+                                        <button class="code-copy" onclick="copyCode(this)">Copier</button>
+                                    </div>
+                                    <div class="code-block">
+                                        <pre><code class="language-sql">CREATE DATABASE smart_pixel;
+USE smart_pixel;
+
+CREATE TABLE smart_pixel_tracking (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    timestamp DATETIME,
+    ip_address VARCHAR(45),
+    user_agent TEXT,
+    page_url TEXT,
+    source VARCHAR(100),
+    campaign VARCHAR(100),
+    country VARCHAR(100),
+    city VARCHAR(100),
+    click_data JSON,
+    viewport VARCHAR(50),
+    session_id VARCHAR(100),
+    INDEX idx_timestamp (timestamp),
+    INDEX idx_source (source),
+    INDEX idx_country (country)
+);</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-content">
+                                <h3>Configurez les fichiers PHP</h3>
+                                <p>Éditez les fichiers <code>config.php</code> ( smart pixel + Dashboard ) avec vos
+                                    identifiants :</p>
+                                <div class="code-container">
+                                    <div class="code-header">
+                                        <div class="code-title">config.php</div>
+                                        <button class="code-copy" onclick="copyCode(this)">Copier</button>
+                                    </div>
+                                    <div class="code-block">
+                                        <pre><code class="language-php">< &alt php
+// Configuration de la base de données
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'smart_pixel');
+define('DB_USER', 'votre_utilisateur');
+define('DB_PASS', 'votre_mot_de_passe');
+define('DB_TABLE', 'tracking_data');
+
+// Configuration du site
+define('SITE_URL', 'https://ton-site.com');
+?></code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-content">
+                                <h3>Intégrez les scripts</h3>
+                                <p>Ajoutez Smart Pixel dans votre index.html :</p>
+                                <div class="code-container">
+                                    <div class="code-header">
+                                        <div class="code-title">index.html</div>
+                                        <button class="code-copy" onclick="copyCode(this)">Copier</button>
+                                    </div>
+                                    <div class="code-block">
+                                        <pre><code class="language-html">&lt;!-- js dans le head --&gt;
+&lt;script src="./smart_phpixel/smart-pixel.js"&gt;&lt;/script&gt;</code><br>
+<code class="language-html">&lt;!-- img dans le body --&gt;
+&lt;img src="https://ton-site.com/tracking.php?" 
+     width="1" height="1" style="display:none;"&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-content">
+                                <h3>Hebergement</h3>
+                                <p>Vous voila responsable de la sécurité des données de vos visiteurs/prospects/clients
+                                    et reprenez le pouvoir sur vos data.</p>
+                                <p>⚠️ Pensez aux bonnes pratiques pour créer une bdd SQL sécurisé. Config et log en
+                                    .gitignore, stockez en dehors du dossier du site, chnagez les permissions et creez
+                                    un login pour le dashboard si necessaire.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-content">
+                                <h3>Dashboard</h3>
+                                <p>Vous pouvez desormais visualiser votre propre Dashboard Analytics.</p>
+                                <img src="./img/smart-pixel-dashboard.png"
+                                    style="width: 100%; height: auto; display: flex; margin: 0 auto; border-radius: 12px;">
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Usage -->
+                <section id="usage" class="section">
+                    <div class="section-header">
+                        <div class="section-icon">📖</div>
+                        <h2>Utilisation Avancée</h2>
+                    </div>
+
+                    <h3 style="margin-bottom: 16px;">Configuration du Tracking</h3>
+                    <p>Ajoutez des campagnes et différents types de tracking :</p>
+
+                    <div class="code-container">
+                        <div class="code-header">
+                            <div class="code-title">Configuration avancée</div>
+                            <button class="code-copy" onclick="copyCode(this)">Copier</button>
+                        </div>
+                        <div class="code-block">
+                            <pre><code class="language-js">// Configuration personnalisée
+const pixelConfig = {
+    endpoint: '/smart_phpixel/pixel.php',
+    trackPageviews: true,
+    trackClicks: true,
+    trackScroll: true,
+    trackForms: true,
+    anonymizeIP: true,
+    sessionTimeout: 30, // minutes
+    debug: false
+};
+
+// Initialisation manuelle
+const pixel = new SmartPixel(pixelConfig);
+
+// Tracking d'événements personnalisés
+pixel.trackEvent('conversion', {
+    value: 49.99,
+    currency: 'EUR',
+    product_id: 'prod_123'
+});</code></pre>
+                        </div>
+                    </div>
+
+                    <h3 style="margin: 32px 0 16px 0;">Image de Tracking</h3>
+                    <p>Utilisez des images invisibles pour le tracking dans les emails et réseaux sociaux :</p>
+
+                    <div class="code-container">
+                        <div class="code-header">
+                            <div class="code-title">HTML pour emails</div>
+                            <button class="code-copy" onclick="copyCode(this)">Copier</button>
+                        </div>
+                        <div class="code-block">
+                            <pre><code class="language-html">&lt;img src="https://ton-site.com/tracking.php?campaign=newsletter-juin&amp;source=email&amp;user_id=123" 
+     width="1" height="1" style="display:none;" 
+     alt="Smart Pixel Tracking"&gt;</code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Demo --
+                <section id="demo" class="section">
+                    <div class="section-header">
+                        <div class="section-icon">🎮</div>
+                        <h2>Démonstration Live</h2>
+                    </div>
+
+                    <p>Générez une image de tracking personnalisée pour vos campagnes :</p>
+
+                   <div class="demo-card">
+                        <div class="form-group">
+                            <label>Nom de la campagne</label>
+                            <input type="text" id="campaignName" class="form-control" value="Lancement Produit"
+                                placeholder="Ex: Newsletter Juin">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Source du trafic</label>
+                            <select id="trafficSource" class="form-control">
+                                <option value="email">Email</option>
+                                <option value="twitter">Twitter</option>
+                                <option value="linkedin">LinkedIn</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="newsletter">Newsletter</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nom du partenaire (optionnel)</label>
+                            <input type="text" id="partnerName" class="form-control" placeholder="Ex: berru"
+                                value="berru">
+                        </div>
+
+                        <button class="btn" onclick="generateTrackingImage()" style="margin-top: 16px;">
+                            Générer l'image de tracking
+                        </button>
+
+                        <div id="previewSection" style="display: none; margin-top: 32px;">
+                            <h3 style="margin-bottom: 16px;">Image générée</h3>
+                            <div class="preview-container">
+                                <img id="trackingPreview" class="preview-image" src="" alt="Preview">
+                            </div>
+
+                            <h3 style="margin: 24px 0 12px 0;">📋 Code d'intégration</h3>
+                            <div class="code-container">
+                                <div class="code-header">
+                                    <div class="code-title">HTML</div>
+                                    <button class="code-copy" onclick="copyCode(this)">Copier</button>
+                                </div>
+                                <div class="code-block">
+                                    <pre><code id="htmlCode" class="language-html"></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>-->
+
+                <!-- Comparison -->
+                <section id="comparison" class="section">
+                    <div class="section-header">
+                        <div class="section-icon">📊</div>
+                        <h2>Comparaison avec Google Analytics</h2>
+                    </div>
+
+                    <table class="comparison">
+                        <thead>
+                            <tr>
+                                <th>Caractéristique</th>
+                                <th>Smart Pixel</th>
+                                <th>Google Analytics</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Propriété des données</strong></td>
+                                <td><span class="check">✅ Vos serveurs</span></td>
+                                <td><span class="cross">❌ Serveurs Google</span></td>
+                            </tr>
+                            <!--<tr>
+                                <td><strong>Conformité RGPD</strong></td>
+                                <td><span class="check">✅ Native & automatique</span></td>
+                                <td><span class="cross">❌ Complexe à configurer</span></td>
+                            </tr>-->
+                            <tr>
+                                <td><strong>Transparence</strong></td>
+                                <td><span class="check">✅ Code source ouvert</span></td>
+                                <td><span class="cross">❌ Boîte noire</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Impact performance</strong></td>
+                                <td><span class="check">✅ 181KO (léger)</span></td>
+                                <td><span class="cross">❌ ?KB + tierces parties</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Coût</strong></td>
+                                <td><span class="check">✅ Gratuit (open source)</span></td>
+                                <td><span class="check">✅ Gratuit Limité</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Souveraineté</strong></td>
+                                <td><span class="check">✅ Hébergement chez vous ou votre hebergeur</span></td>
+                                <td><span class="cross">❌ Soumis au Cloud Act (USA)</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dépendance</strong></td>
+                                <td><span class="check">✅ Votre Hébergement</span></td>
+                                <td><span class="cross">❌ Dépendant de Google</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- FAQ -->
+                <section id="faq" class="section">
+                    <div class="section-header">
+                        <div class="section-icon">❓</div>
+                        <h2>Questions Fréquentes</h2>
+                    </div>
+
+                    <div style="margin-bottom: 32px;">
+                        <h3 style="margin-bottom: 12px;">🤔 Smart Pixel est-il vraiment conforme RGPD ?</h3>
+                        <p style="color: var(--text-secondary);">Oui, par conception : consentement explicite,
+                            anonymisation de l'IP et chiffrement possible, données stockées chez vous ou votre
+                            hébergeur.</p>
+                    </div>
+
+                    <div style="margin-bottom: 32px;">
+                        <h3 style="margin-bottom: 12px;">💾 Quelles sont les limites techniques ?</h3>
+                        <p style="color: var(--text-secondary);">Smart Pixel est conçu pour les sites jusqu'à 10K
+                            visites/mois. Pour plus de volume, une optimisation de la base de données est recommandée.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 32px;">
+                        <h3 style="margin-bottom: 12px;">🔧 Puis-je personnaliser le dashboard ?</h3>
+                        <p style="color: var(--text-secondary);">Absolument si vous codez un peut ou si vous demandez
+                            gentillement à une IA! Le code est entièrement modifiable. Vous pouvez ajouter des
+                            graphiques, des exports personnalisés, ou intégrer d'autres outils, faire un widget de ce
+                            tool etc.</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p style="color: var(--text-secondary);">🟦 Smart Pixel - Analytics Souverains</p>
+                    <p style="color: var(--text-tertiary); font-size: 14px; margin-top: 8px;">© 2025 -
+                        github.com/berru-g</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/berru-g/smart_phpixel/" target="_blank">GitHub</a>
+                    <a href="https://github.com/berru-g/donation.html">Donnation</a>
+                    <a href="https://gael-berru.com">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bannière Cookie - Identique à ton original -->
+    <div id="cookie-banner" style="display: none;">
+        <div class="cookie-header">
+            <div class="cookie-icon">🛡️</div>
+            <h3 class="cookie-title">Transparence totale sur vos données</h3>
+        </div>
+
+        <p class="cookie-description">
+            <strong>Ici, aucun de vos clics n'est vendu à Google ou Facebook.</strong><br>
+            J'utilise <strong>Smart Pixel</strong>, un système d'analyse développé avec éthique, dans le respect des loi
+            RGPD.
+            <br><br>
+            En autorisant l'analyse, vous m'aidez à améliorer ce site <strong>sans enrichir les GAFAM de vos
+                données</strong>.
+        </p>
+
+        <div class="cookie-buttons">
+            <button class="cookie-btn reject-all" onclick="acceptCookies('none')">
+                Non merci
+            </button>
+            <!--<button class="cookie-btn accept-necessary" onclick="acceptCookies('necessary')">
+                Nécessaires uniquement
+            </button>-->
+            <button class="cookie-btn accept-all" onclick="acceptCookies('all')">
+                Ok pour moi
+            </button>
+        </div>
+
+        <div class="cookie-footer">
+            <a href="https://github.com/berru-g/smart_phpixel" target="_blank">Voir le code source de
+                Smart Pixel</a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-php.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>
