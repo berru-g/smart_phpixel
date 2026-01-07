@@ -23,19 +23,21 @@
         content="web souverains, smart pixel, alternative google analytics, analytique libre, reprendre le control, no gafam, analytics alternative">
     <meta name="author" content="Gael Berru.">
     <meta name="robots" content="noai">
-    <meta property="og:url" content="hhttps://berru-g.github.io/smart_phpixel/">
-    <link rel="canonical" href="hhttps://berru-g.github.io/smart_phpixel/" />
+    <meta property="og:url" content="https://berru-g.github.io/smart_phpixel/">
+    <link rel="canonical" href="https://berru-g.github.io/smart_phpixel/" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="popup.css">
-    <script src="smart-pixel.js"></script>
+    <!--<script src="smart-pixel.js"></script>-->
+    <script src="https://gael-berru.com/smart_phpixel/smart-pixel.js"></script>
+    <script src="https://gael-berru.com/smart_phpixel/CookieComponent.js" data-site-id="berru-g"></script>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Smart Pixel",
-  "url": "https://raw.githubusercontent.com/berru-g/smart_phpixel/refs/heads/main/index.html",
+  "url": "https://berru-g.github.io/smart_phpixel/",
   "description": "Smart Pixel est une alternative souveraine à Google Analytics : open source, conforme RGPD et auto-hébergé pour reprendre le contrôle des données de vos visiteurs.",
   "applicationCategory": "AnalyticsApplication",
   "operatingSystem": "Web",
@@ -59,7 +61,7 @@
   ],
   "sameAs": [
     "https://berru-g.github.io/smart_phpixel/",
-    "https://github.com/berru-g"
+    "https://gael-berru.com"
   ]
 }
 </script>
@@ -74,8 +76,8 @@
                 <a href="#" class="nav-brand">
                     <div
                         style="background: linear-gradient(135deg, #667eea, #764ba2); width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">
-                        <img src="hhttps://berru-g.github.io/smart_phpixel//smart_phpixel/pixel.php?source=smart-page" width="1" height="1"
-                            style="display:none;">
+                        <img src="https://gael-berru.com/smart_phpixel/pixel.php?source=doc-smart-pixel" width="1" height="1"
+            style="display:none;">
                     </div>
                     Smart Pixel
                 </a>
@@ -346,7 +348,7 @@ define('SITE_URL', 'https://ton-site.com');
                                 <h3>Hebergement</h3>
                                 <p>Vous voila responsable de la sécurité des données de vos visiteurs/prospects/clients
                                     et reprenez le pouvoir sur vos data.</p>
-                                <p>⚠️ Pensez aux bonnes pratiques pour créer une bdd SQL sécurisé. Config et log en
+                                <p style="border-left: 2px solid #e3b341;">⚠️ Pensez aux bonnes pratiques pour créer une bdd SQL sécurisé. Config et log en
                                     .gitignore, stockez en dehors du dossier du site, chnagez les permissions et creez
                                     un login pour le dashboard si necessaire.</p>
                             </div>
@@ -576,8 +578,8 @@ pixel.trackEvent('conversion', {
                 </div>
                 <div class="footer-links">
                     <a href="https://github.com/berru-g/smart_phpixel/" target="_blank">GitHub</a>
-                    <a href="https://github.com/berru-g/donation.html">Donnation</a>
-                    <a href="hhttps://berru-g.github.io/smart_phpixel/">Contact</a>
+                    <a href="https://gael-berru.com/donation.html">Donnation</a>
+                    <a href="https://gael-berru.com">Contact</a>
                 </div>
             </div>
         </div>
